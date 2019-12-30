@@ -1,0 +1,5 @@
+project(glGraphics CXX C CUDA)
+cmake_minimum_required(VERSION 3.10)
+file(GLOB SRC_FILE *.c*)
+add_library(glGraphics_lib ${SRC_FILE})
+include_directories(include)

@@ -1,0 +1,5 @@
+project(project1 CXX C CUDA)
+cmake_minimum_required(VERSION 3.10)
+file(GLOB SRC_FILE *.c*)
+add_library(project1_lib ${SRC_FILE})
+include_directories(include)
