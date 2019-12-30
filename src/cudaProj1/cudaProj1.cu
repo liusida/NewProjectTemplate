@@ -20,4 +20,5 @@ cudaProj1::~cudaProj1()
 
 void cudaProj1::startKernel() {
     Kernel<<<1,3>>>();
+    cudaDeviceSynchronize();
 }

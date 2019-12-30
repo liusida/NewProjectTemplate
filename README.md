@@ -32,3 +32,24 @@ break on @    Kernel<<<1,3>>>();
 ```
 and when program hit this line, press F11 to step in, then F10 to step over, then the breakpoints inside the kernel will work!
 
+## Enabling IntelliSense via Clangd
+
+1. Install extension `vscode-clangd` in Visual Studio Code and install `clangd` in Ubuntu:
+```
+sudo apt install clangd
+```
+
+2. Disable intellisense via `vscode-cpp` by adding those lines in `settings.json`:
+```
+    "C_Cpp.formatting": "Disabled",
+    "C_Cpp.autocomplete": "Disabled",
+    "C_Cpp.errorSquiggles": "Disabled",
+    "C_Cpp.intelliSenseEngine": "Disabled",
+    "C_Cpp.configurationWarnings": "Disabled",
+    "C_Cpp.autoAddFileAssociations": false,
+    "C_Cpp.vcpkg.enabled": false,
+```
+
+3. Ctrl Click something, intellisense should work!
+
+
