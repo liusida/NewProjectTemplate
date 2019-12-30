@@ -4,6 +4,8 @@ Suppose we need to start a new project with OpenGL, CUDA, GoogleTest, and enabli
 
 ## Enabling cuda kernel debugging
 
+![https://github.com/liusida/NewProjectTemplate/blob/master/doc/cuda_gdb_debugging_step_into_kernels.png?raw=true](https://github.com/liusida/NewProjectTemplate/blob/master/doc/cuda_gdb_debugging_step_into_kernels.png)
+
 1. Make sure there's `/usr/local/cuda/bin/cuda-gdb`;
 
 2. In Visual Studio Code, create `launch.json` for debug tool and add these key lines:
